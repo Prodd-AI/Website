@@ -12,12 +12,12 @@ const IntelligentByDesignSection = () => {
       <div className=" z-10 flex flex-col sm:items-center justify-center gap-6 min-h-[40rem] px-6 sm:px-4 py-40">
         <img src={Vector1} alt="Vector 1" className="absolute top-0 right-0" />
         <h1 className="text-[40px] md:text-[60px] font-semibold text-left w-full leading-12 md:leading-20 max-w-[300px] sm:max-w-none">
-          <span className="bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent z-10 relative">
             Intelligent by design.
           </span>
         </h1>
 
-        <p className="text-white font-normal text-base w-full text-left">
+        <p className="text-white font-normal text-base w-full text-left z-10 relative">
           What makes Prod AI unlike anything you've used before?
         </p>
 
