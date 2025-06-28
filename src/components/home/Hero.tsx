@@ -15,7 +15,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-black"></div>
       <div className="relative z-10 flex flex-col sm:items-center justify-center gap-6">
-        <h1 className="text-[40px] md:text-[80px] font-semibold text-left sm:text-center flex flex-col items-center justify-center leading-12 md:leading-26">
+        <h1 className="text-[40px] md:text-[80px] font-semibold text-left sm:text-center flex flex-col items-center justify-center leading-12 md:leading-26  max-w-[300px] sm:max-w-none">
           <span className="bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
             The AI Operating System
           </span>
