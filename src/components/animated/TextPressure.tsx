@@ -213,7 +213,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
               }
             }}
             data-char={char}
-            className="inline-block"
+            className="inline-block cursor-default"
           >
             {char}
           </span>

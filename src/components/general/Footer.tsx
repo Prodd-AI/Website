@@ -1,4 +1,5 @@
 import { footerItems } from "../../utils/footerItems";
+import RotatingText from "../animated/RotatingText";
 import TextPressure from "../animated/TextPressure";
 import GradientButton from "./GradientButton";
 import Layout from "./Layout";
@@ -9,9 +10,28 @@ const Footer = () => {
     <>
       <Layout background="bg-black" relative={true}>
         <div className=" z-10 flex flex-col sm:items-center justify-center gap-6 px-6 sm:px-4 py-20 bg-gradient-to-b from-[#9747FF] to-black bg-clip-padding rounded-[50px]">
-          <h1 className="text-[40px] md:text-[60px] font-semibold text-left sm:text-center w-full leading-12 md:leading-20 max-w-[300px] sm:max-w-none">
-            <span className="bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent z-10 relative">
-              See Prod AI in Action
+          <h1 className="text-[40px] md:text-[60px] font-bold text-left sm:text-center w-full leading-12 md:leading-20 max-w-[300px] sm:max-w-none">
+            <span className="bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent z-10 relative flex items-center gap-4 justify-center">
+              See Prod AI{" "}
+              <RotatingText
+                texts={[
+                  "in action",
+                  "in HR",
+                  "as your buddy",
+                  "in your workplace",
+                  "in company culture",
+                  "for better staffing",
+                ]}
+                mainClassName="px-2 sm:px-2 md:px-3 bg-black/10 backdrop-blur-lg text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-2xl inline-block text-[40px] md:text-[60px]"
+                staggerFrom={"last"}
+                initial={{ y: "100%" }}
+                animate={{ y: 0 }}
+                exit={{ y: "-120%" }}
+                staggerDuration={0.025}
+                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                rotationInterval={4000}
+              />
             </span>
           </h1>
 
@@ -35,6 +55,19 @@ const Footer = () => {
         </div>
       </Layout>
 
+      <Layout background="bg-black" relative={true}>
+        <div className="flex items-center md:gap-10 gap-4 md:justify-center justify-start py-10 flex-wrap max-w-[200px] sm:max-w-none">
+          {footerItems.map((item) => (
+            <div
+              key={item.label}
+              className="text-white/50 text-[20px] md:text-[30px] tracking-wide cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#20D6FE] hover:to-[#9747FF] transition-all duration-200 font-normal"
+            >
+              {item.label}
+            </div>
+          ))}
+        </div>
+      </Layout>
+
       <div className="relative">
         <TextPressure
           text="PROD AI"
@@ -51,19 +84,8 @@ const Footer = () => {
       </div>
 
       <Layout background="bg-black" relative={true}>
-        <div className="flex items-center md:gap-10 gap-4 md:justify-center justify-start py-10 flex-wrap max-w-[200px] sm:max-w-none">
-          {footerItems.map((item) => (
-            <div
-              key={item.label}
-              className="text-white/50 text-[20px] md:text-[30px] tracking-wide cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#20D6FE] hover:to-[#9747FF] transition-all duration-200 font-normal"
-            >
-              {item.label}
-            </div>
-          ))}
-        </div>
-
         <div className="flex items-center justify-center pb-10">
-          <p className="text-[#FFFFFF]/20 text-[20px] md:text-[30px] text-center">
+          <p className="text-[#FFFFFF]/20 text-[12px] md:text-[16px] text-center">
             © 2025 Prod AI. Building a smarter, healthier workplace.
           </p>
         </div>
