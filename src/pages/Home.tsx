@@ -4,6 +4,7 @@ import SecondSection from "../components/home/SecondSection";
 import IntelligentByDesignSection from "../components/home/IntelligentByDesignSection";
 import Organization from "../components/home/Organization";
 import WorkSection from "../components/home/WorkSection";
+import Footer from "../components/general/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <IntelligentByDesignSection />
         <Organization />
         <WorkSection />
+        <Footer />
       </div>
     </div>
   );
