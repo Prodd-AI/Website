@@ -51,11 +51,11 @@ const Footer = () => {
       </div>
 
       <Layout background="bg-black" relative={true}>
-        <div className="hidden md:flex items-center gap-10 justify-center py-10">
+        <div className="flex items-center md:gap-10 gap-4 md:justify-center justify-start py-10 flex-wrap max-w-[200px] sm:max-w-none">
           {footerItems.map((item) => (
             <div
               key={item.label}
-              className="text-white/50 text-[30px] tracking-wide cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#20D6FE] hover:to-[#9747FF] transition-all duration-200 font-normal"
+              className="text-white/50 text-[20px] md:text-[30px] tracking-wide cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#20D6FE] hover:to-[#9747FF] transition-all duration-200 font-normal"
             >
               {item.label}
             </div>
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center justify-center pb-10">
-          <p className="text-[#FFFFFF]/20 text-[30px] text-center">
+          <p className="text-[#FFFFFF]/20 text-[20px] md:text-[30px] text-center">
             © 2025 Prod AI. Building a smarter, healthier workplace.
           </p>
         </div>
