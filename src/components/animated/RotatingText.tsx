@@ -33,9 +33,9 @@ export interface RotatingTextProps
   > {
   texts: string[];
   transition?: Transition;
-  initial?: boolean | Target | VariantLabels;
+  initial?: boolean | Target | VariantLabels | TargetAndTransition;
   animate?: boolean | VariantLabels | TargetAndTransition;
-  exit?: Target | VariantLabels;
+  exit?: Target | VariantLabels | TargetAndTransition;
   animatePresenceMode?: "sync" | "wait";
   animatePresenceInitial?: boolean;
   rotationInterval?: number;
