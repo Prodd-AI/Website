@@ -1,11 +1,12 @@
 import { organizations } from "../../utils/organizations";
 import Layout from "../general/Layout";
 import TransparentCard from "../general/TransparentCard";
+import image from "../../assets/images/team.jpg";
 
 const Organization = () => {
   return (
     <Layout
-      background="bg-gradient-to-b from-black to-[#9747FF]/20"
+      background="bg-gradient-to-b from-black/80 to-[#9747FF]/20"
       relative={true}
     >
       <div className=" z-10 flex flex-col sm:items-center justify-center gap-6 min-h-[20rem] px-6 sm:px-4 py-20">
@@ -18,6 +19,12 @@ const Organization = () => {
         <p className="text-white font-normal text-base w-full text-left">
           What makes Prod AI unlike anything you've used before?
         </p>
+
+        <img
+          src={image}
+          alt="productivity-tools"
+          className="w-full md:h-[35rem] h-[25rem] object-cover rounded-[24px] brightness-90"
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">
           {organizations.map((organization) => (

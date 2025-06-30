@@ -8,10 +8,10 @@ import TransparentButton from "./TransparentButton";
 const Footer = () => {
   return (
     <>
-      <Layout background="bg-black" relative={true}>
+      <Layout background="" relative={true}>
         <div className=" z-10 flex flex-col sm:items-center justify-center gap-6 px-6 sm:px-4 py-20 bg-gradient-to-b from-[#9747FF] to-black bg-clip-padding rounded-[50px]">
           <h1 className="text-[40px] md:text-[60px] font-bold text-left sm:text-center w-full leading-12 md:leading-20 max-w-[300px] sm:max-w-none">
-            <span className="bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent z-10 relative flex items-center gap-4 justify-center">
+            <span className="bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent z-10 relative flex sm:items-center items-start gap-4 justify-center sm:flex-row flex-col">
               See Prod AI{" "}
               <RotatingText
                 texts={[
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
       </Layout>
 
-      <Layout background="bg-black" relative={true}>
+      <Layout background="" relative={true}>
         <div className="flex items-center md:gap-10 gap-4 md:justify-center justify-start py-10 flex-wrap max-w-[200px] sm:max-w-none">
           {footerItems.map((item) => (
             <div
@@ -83,7 +83,7 @@ const Footer = () => {
         />
       </div>
 
-      <Layout background="bg-black" relative={true}>
+      <Layout background="" relative={true}>
         <div className="flex items-center justify-center pb-10">
           <p className="text-[#FFFFFF]/20 text-[12px] md:text-[16px] text-center">
             © 2025 Prod AI. Building a smarter, healthier workplace.

@@ -23,7 +23,7 @@ const WorkSection = () => {
   ];
 
   return (
-    <div className="relative flex flex-col sm:items-center justify-center gap-20 h-[40rem] bg-gradient-to-b from-[#9747FF]/20 to-black">
+    <div className="relative flex flex-col sm:items-center justify-center gap-20 h-[40rem] bg-gradient-to-b from-[#9747FF]/20 to-black/80">
       <img
         src={Vector2}
         alt="Vector 2"
