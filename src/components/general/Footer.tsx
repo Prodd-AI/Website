@@ -56,7 +56,7 @@ const Footer = () => {
       </Layout>
 
       <Layout background="" relative={true}>
-        <div className="flex items-center md:gap-10 gap-4 md:justify-center justify-start py-10 flex-wrap max-w-[200px] sm:max-w-none">
+        <div className="flex items-center md:gap-10 gap-4 md:justify-center justify-start py-10 flex-wrap max-w-[300px] sm:max-w-none">
           {footerItems.map((item) => (
             <div
               key={item.label}

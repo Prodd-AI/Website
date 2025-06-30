@@ -23,7 +23,7 @@ const Organization = () => {
         <img
           src={image}
           alt="productivity-tools"
-          className="w-full md:h-[35rem] h-[25rem] object-cover rounded-[24px] brightness-90"
+          className="w-fullh-auto min-h-[250px] object-cover rounded-[24px] brightness-90"
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">
