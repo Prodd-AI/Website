@@ -9,7 +9,7 @@ const Organization = () => {
       background="bg-gradient-to-b from-black/80 to-[#9747FF]/20"
       relative={true}
     >
-      <div className=" z-10 flex flex-col sm:items-center justify-center gap-6 min-h-[20rem] px-6 sm:px-4 py-20">
+      <div className=" z-10 flex flex-col sm:items-center justify-center gap-6 min-h-[20rem] sm:py-20 py-0">
         <h1 className="text-[40px] md:text-[60px] font-semibold text-left w-full leading-12 md:leading-20 max-w-[300px] sm:max-w-none">
           <span className="bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent">
             For Every Layer of Your Organization
