@@ -27,10 +27,18 @@ const Home = () => {
         </div>
         <Hero />
         <SecondSection />
-        <IntelligentByDesignSection />
-        <Organization />
-        <WorkSection />
-        <Footer />
+        <div id="features">
+          <IntelligentByDesignSection />
+        </div>
+        <div id="who-is-it-for">
+          <Organization />
+        </div>
+        <div id="integration">
+          <WorkSection />
+        </div>
+        <div id="contact">
+          <Footer />
+        </div>
       </div>
     </div>
   );

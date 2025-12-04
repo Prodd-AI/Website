@@ -1,22 +1,24 @@
+import { scrollToSection } from "./scrollToSection";
+
 export const headerItems = [
   {
     label: "Features",
-    href: "/",
-    onClick: () => {},
+    href: "#features",
+    onClick: () => scrollToSection("features"),
   },
   {
     label: "Who is it for",
-    href: "/",
-    onClick: () => {},
+    href: "#who-is-it-for",
+    onClick: () => scrollToSection("who-is-it-for"),
   },
   {
     label: "Integration",
-    href: "/",
-    onClick: () => {},
+    href: "#integration",
+    onClick: () => scrollToSection("integration"),
   },
   {
     label: "Contact",
-    href: "/",
-    onClick: () => {},
+    href: "#contact",
+    onClick: () => scrollToSection("contact"),
   },
 ];

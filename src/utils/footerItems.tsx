@@ -1,27 +1,19 @@
+import { scrollToSection } from "./scrollToSection";
+
 export const footerItems = [
   {
     label: "About",
-    href: "/",
-    onClick: () => {},
+    href: "#",
+    onClick: () => scrollToSection("features"), // Scroll to top/features as About section
   },
   {
     label: "Features",
-    href: "/",
-    onClick: () => {},
-  },
-  {
-    label: "Docs",
-    href: "/",
-    onClick: () => {},
+    href: "#features",
+    onClick: () => scrollToSection("features"),
   },
   {
     label: "Contact",
-    href: "/",
-    onClick: () => {},
-  },
-  {
-    label: "Privacy",
-    href: "/",
-    onClick: () => {},
+    href: "#contact",
+    onClick: () => scrollToSection("contact"),
   },
 ];

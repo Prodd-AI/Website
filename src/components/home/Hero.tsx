@@ -1,6 +1,7 @@
 import GradientButton from "../general/GradientButton";
 import TransparentButton from "../general/TransparentButton";
 import heroBg from "../../assets/images/hero-bg.png";
+import { scrollToSection } from "../../utils/scrollToSection";
 
 const Hero = () => {
   return (
@@ -31,7 +32,7 @@ const Hero = () => {
         </p>
 
         <div className="flex sm:items-center items-start justify-center gap-4 mt-4 flex-col sm:flex-row">
-          <GradientButton>
+          <GradientButton onClick={() => scrollToSection("features")}>
             <span className="text-white font-kumbh-semibold text-sm">
               See Prodily in action
             </span>

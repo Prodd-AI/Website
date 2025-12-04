@@ -6,7 +6,10 @@ const Header = () => {
   return (
     <Layout background="bg-black/20 backdrop-blur-xl fixed top-0 left-0 right-0 z-50 h-[80px] w-full flex items-center justify-between">
       <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-2">
+        <div
+          className="flex items-center gap-2 cursor-pointer"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <img src="/logo.svg" alt="logo" className="w-[31px] h-[31px]" />
           <h1 className="text-white text-lg font-medium">Prodily</h1>
         </div>
@@ -15,6 +18,7 @@ const Header = () => {
           {headerItems.map((item) => (
             <div
               key={item.label}
+              onClick={item.onClick}
               className="text-white/50 text-base tracking-wide cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#20D6FE] hover:to-[#9747FF] transition-all duration-200 font-normal"
             >
               {item.label}

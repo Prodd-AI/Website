@@ -60,6 +60,7 @@ const Footer = () => {
           {footerItems.map((item) => (
             <div
               key={item.label}
+              onClick={item.onClick}
               className="text-white/50 text-[20px] md:text-[30px] tracking-wide cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#20D6FE] hover:to-[#9747FF] transition-all duration-200 font-normal"
             >
               {item.label}
