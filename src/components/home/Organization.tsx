@@ -17,7 +17,7 @@ const Organization = () => {
         </h1>
 
         <p className="text-white font-normal text-base w-full text-left">
-          What makes Prod AI unlike anything you've used before?
+          What makes Prodily unlike anything you've used before?
         </p>
 
         <img

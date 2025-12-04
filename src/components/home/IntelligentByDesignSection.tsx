@@ -19,7 +19,7 @@ const IntelligentByDesignSection = () => {
         </h1>
 
         <p className="text-white font-normal text-base w-full text-left z-10 relative">
-          What makes Prod AI unlike anything you've used before?
+          What makes Prodily unlike anything you've used before?
         </p>
 
         <img

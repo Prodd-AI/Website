@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="flex sm:items-center items-start justify-center gap-4 mt-4 flex-col sm:flex-row">
           <GradientButton>
             <span className="text-white font-kumbh-semibold text-sm">
-              See ProdAI in action
+              See Prodily in action
             </span>
           </GradientButton>
           <TransparentButton>

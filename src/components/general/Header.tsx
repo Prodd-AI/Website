@@ -8,7 +8,7 @@ const Header = () => {
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-2">
           <img src="/logo.svg" alt="logo" className="w-[31px] h-[31px]" />
-          <h1 className="text-white text-lg font-medium">Prod AI</h1>
+          <h1 className="text-white text-lg font-medium">Prodily</h1>
         </div>
 
         <div className="hidden md:flex items-center gap-3">

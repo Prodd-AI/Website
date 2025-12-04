@@ -14,7 +14,7 @@ const SecondSection = () => {
       </h1>
 
       <p className="text-white font-normal text-base sm:text-center text-left max-w-[600px]">
-        Traditional tools obsess over output. Prod AI understands humans. It
+        Traditional tools obsess over output. Prodily understands humans. It
         doesn't just clock tasks it listens. It sees the signs of stress. It
         tunes into team morale. All in real time. All with empathy.
       </p>
