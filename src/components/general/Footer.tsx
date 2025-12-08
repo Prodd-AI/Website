@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { footerItems } from "../../utils/footerItems";
 import RotatingText from "../animated/RotatingText";
 import TextPressure from "../animated/TextPressure";
@@ -42,9 +43,12 @@ const Footer = () => {
 
           <div className="flex sm:items-center items-start justify-center gap-4 mt-4 flex-col sm:flex-row">
             <GradientButton>
-              <span className="text-white font-kumbh-semibold text-sm">
-                Book Demo
-              </span>
+              <Link
+                to="/waitlist"
+                className="text-white font-kumbh-semibold text-sm"
+              >
+                Join Waitlist
+              </Link>
             </GradientButton>
             <TransparentButton>
               <span className="text-white font-kumbh-semibold text-sm">
