@@ -1,6 +1,7 @@
 import Layout from "./Layout";
 import { headerItems } from "../../utils/headerItems";
 import GradientButton from "./GradientButton";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -27,9 +28,12 @@ const Header = () => {
         </div>
 
         <GradientButton>
-          <span className="text-white font-kumbh-semibold text-sm">
-            Book Demo
-          </span>
+          <Link
+            to="/waitlist"
+            className="text-white font-kumbh-semibold text-sm"
+          >
+            Join Waitlist
+          </Link>
         </GradientButton>
       </div>
     </Layout>
