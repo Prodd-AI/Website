@@ -229,11 +229,11 @@ function Form() {
       </div>
       <div className="mt-6 md:mt-[40px]">
         <h1 className="text-[32px] sm:text-[40px] md:text-[50.72px] font-bold leading-tight">
-          Request a Demo
+          Secure Your Spot for Prodily
         </h1>
         <p className="text-[16px] sm:text-[18px] md:text-[22px] font-normal text-[#3A404D] mt-3 md:mt-4">
-          Experience the power of AI-driven productivity. Fill out the form
-          below to schedule your personalized demo.
+          Be among the first to experience Prod AI and get special launch
+          benefits. We'll only use your email to notify you when we go live.
         </p>
       </div>
 
