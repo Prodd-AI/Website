@@ -1,7 +1,7 @@
 import Layout from "./Layout";
 import { headerItems } from "../../utils/headerItems";
 import GradientButton from "./GradientButton";
-import { Link } from "react-router-dom";
+import { openDemoEmail } from "../../utils/openTeamEmail";
 
 const Header = () => {
   return (
@@ -27,13 +27,10 @@ const Header = () => {
           ))}
         </div>
 
-        <GradientButton>
-          <Link
-            to="/waitlist"
-            className="text-white font-kumbh-semibold text-sm"
-          >
-            Join Waitlist
-          </Link>
+        <GradientButton onClick={openDemoEmail}>
+          <span className="text-white font-kumbh-semibold text-sm">
+            Book a demo
+          </span>
         </GradientButton>
       </div>
     </Layout>

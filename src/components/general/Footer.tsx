@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
 import { footerItems } from "../../utils/footerItems";
 import RotatingText from "../animated/RotatingText";
 import TextPressure from "../animated/TextPressure";
 import GradientButton from "./GradientButton";
 import Layout from "./Layout";
 import TransparentButton from "./TransparentButton";
-import { openTeamEmail } from "../../utils/openTeamEmail";
+import { openTeamEmail, openDemoEmail } from "../../utils/openTeamEmail";
 
 const Footer = () => {
   return (
@@ -43,13 +42,10 @@ const Footer = () => {
           </p>
 
           <div className="flex sm:items-center items-start justify-center gap-4 mt-4 flex-col sm:flex-row">
-            <GradientButton>
-              <Link
-                to="/waitlist"
-                className="text-white font-kumbh-semibold text-sm"
-              >
-                Join Waitlist
-              </Link>
+            <GradientButton onClick={openDemoEmail}>
+              <span className="text-white font-kumbh-semibold text-sm">
+                Book a demo
+              </span>
             </GradientButton>
             <TransparentButton onClick={openTeamEmail}>
               <span className="text-white font-kumbh-semibold text-sm">
