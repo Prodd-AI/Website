@@ -5,6 +5,7 @@ import TextPressure from "../animated/TextPressure";
 import GradientButton from "./GradientButton";
 import Layout from "./Layout";
 import TransparentButton from "./TransparentButton";
+import { openTeamEmail } from "../../utils/openTeamEmail";
 
 const Footer = () => {
   return (
@@ -50,7 +51,7 @@ const Footer = () => {
                 Join Waitlist
               </Link>
             </GradientButton>
-            <TransparentButton>
+            <TransparentButton onClick={openTeamEmail}>
               <span className="text-white font-kumbh-semibold text-sm">
                 Talk to our team
               </span>

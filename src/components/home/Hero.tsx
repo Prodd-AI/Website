@@ -2,6 +2,7 @@ import GradientButton from "../general/GradientButton";
 import TransparentButton from "../general/TransparentButton";
 import heroBg from "../../assets/images/hero-bg.png";
 import { scrollToSection } from "../../utils/scrollToSection";
+import { openTeamEmail } from "../../utils/openTeamEmail";
 
 const Hero = () => {
   return (
@@ -37,7 +38,7 @@ const Hero = () => {
               See Prodily in action
             </span>
           </GradientButton>
-          <TransparentButton>
+          <TransparentButton onClick={openTeamEmail}>
             <span className="text-white font-kumbh-semibold text-sm">
               Talk to our team
             </span>
