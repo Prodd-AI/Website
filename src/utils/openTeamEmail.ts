@@ -1,4 +1,4 @@
-const TEAM_EMAIL = "contact@teknesisbrand.com";
+const TEAM_EMAIL = "contact@prodly.tech";
 
 const SUBJECT = "Talk to the Prodily team";
 
